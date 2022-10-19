@@ -5,8 +5,7 @@ description = ""
 authors = ["Anisimoff <happyprooo@gmail.com>"]
 readme = "README.md"
 packages = [
-	{include = "hexlet_code"},
-	{ include = "brain_games" },
+	{include = "brain_games"},
 ]
 
 [tool.poetry.dependencies]
