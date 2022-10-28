@@ -1,8 +1,8 @@
 from brain_games.game_logic import logic
-from games.game_even import even_game
+from games.game_calc import calc_game
 
 def main():
-    logic(even_game)
+    logic(calc_game)
 
 
 if __name__ == "__main__":
