@@ -3,3 +3,5 @@
 <a href="https://codeclimate.com/github/AnisimoffA/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/89b5ac243bcf1a7c19b6/maintainability" /></a>
 
 https://asciinema.org/a/532420 первая игра
+https://asciinema.org/a/532846 вторая игра
+https://asciinema.org/a/532865 третья игра
