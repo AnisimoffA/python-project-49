@@ -1,5 +1,4 @@
 from random import randint, choice
-import brain_games.scripts.brain_games as brain_games
 import brain_games.game_logic as game_logic
 import prompt
 

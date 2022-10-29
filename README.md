@@ -5,3 +5,4 @@
 https://asciinema.org/a/532420 первая игра
 https://asciinema.org/a/532846 вторая игра
 https://asciinema.org/a/532865 третья игра
+https://asciinema.org/a/533241 четвертая игра
