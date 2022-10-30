@@ -1,12 +1,11 @@
-from random import randint, choice
-import brain_games.scripts.brain_games as brain_games
-import brain_games.game_logic as game_logic
+from random import randint
 import prompt
 
-    
+
 def even_game():
-    number = randint(1,6)
-    answer = prompt.string(f"Answer \"yes\" if the number is even, otherwise answer \"no\".\nQuestion: {number}\n")
+    number = randint(1, 6)
+    print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
+    answer = prompt.string(f"Question: {number}\n")
     print("Your answer: ", answer)
 
     if is_even(number):
@@ -16,8 +15,9 @@ def even_game():
 
     return str(answer), str(right_answer)
 
+
 def is_even(num):
-    if  num % 2 == 0:
+    if num % 2 == 0:
         return True
     else:
         return False
