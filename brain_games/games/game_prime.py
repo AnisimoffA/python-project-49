@@ -6,7 +6,7 @@ import prompt
 def prime_game():
     name = game_logic.name
     number = randint(1,100)
-    print(f"\"yes\" if given number is prime. Otherwise answer \"no\".\nQuestion: {number}")
+    print(f"Answer \"yes\" if given number is prime. Otherwise answer \"no\".\nQuestion: {number}")
     answer = prompt.string("Your answer: ")
 
     if is_prime(number) == 0:
