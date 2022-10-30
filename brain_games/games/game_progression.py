@@ -22,7 +22,6 @@ def progression_game():
             right_answer = our_range[hide_number]
             our_range[hide_number] = ".."
 
-
     list_string = (" ".join(our_range))
 
     print(f"What number is missing in the progression?\nQuestion: {list_string}")

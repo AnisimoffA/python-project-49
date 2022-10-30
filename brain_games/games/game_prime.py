@@ -1,5 +1,4 @@
 from random import randint
-from re import T
 import brain_games.game_logic as game_logic
 import prompt
 

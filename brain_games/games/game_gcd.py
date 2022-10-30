@@ -19,7 +19,7 @@ def gcd_game():
 
     right_answer = max(answer_list)
 
-    if int(answer) == right_answer:
+    if answer == str(right_answer):
         print("correct!")
     else:
         print(f"Let's try again, {name}!")
