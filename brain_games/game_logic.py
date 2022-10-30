@@ -1,6 +1,6 @@
-from brain_games.scripts.brain_games import main
+from brain_games.scripts.brain_games import main2
 
-name = main()
+name = main2()
 
 def logic(func):
     n = 0
