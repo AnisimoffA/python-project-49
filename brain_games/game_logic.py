@@ -7,10 +7,10 @@ name = main2()
 def logic(func):
     n = 0
     while n <= 2:
-        n += 1
         a = func()
         if a[0] == a[1]:
             print("correct!")
+            n += 1
         else:
             print(f"Let's try again, {name}!")
             break
