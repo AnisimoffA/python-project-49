@@ -14,7 +14,7 @@ def logic(func):
             break
 
     if n == 3:
-        print(f"Congratulations, {name}")
+        print(f"Congratulations, {name}!")
 
 if __name__ == "__main__":
     logic()
