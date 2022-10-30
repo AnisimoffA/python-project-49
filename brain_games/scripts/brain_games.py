@@ -6,6 +6,7 @@ def main():
     print("Welcome to the Brain Games!")
     cli.welcome_user()
 
+
 def main2():
     print("Welcome to the Brain Games!")
     x = cli.welcome_user()
