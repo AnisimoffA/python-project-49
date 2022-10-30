@@ -5,8 +5,6 @@ name = main()
 def logic(func):
     n = 0
     while n <= 2:
-        if func() == False:
-            break
         n += 1
         if n == 3:
             print(f"Congratulations, {name}")
