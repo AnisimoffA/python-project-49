@@ -18,9 +18,5 @@ def calc_game():
     elif action == "*":
         right_answer = number1 * number2
 
-    if answer == str(right_answer):
-        print("Correct!")
-    else:
-        print(f"{answer} is wrong answer ;(. Correct answer was {right_answer}.\nLet's try again, {name}")
-        return False
+    return str(answer), str(right_answer)
     

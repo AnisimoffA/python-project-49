@@ -19,11 +19,7 @@ def gcd_game():
 
     right_answer = max(answer_list)
 
-    if answer == str(right_answer):
-        print("correct!")
-    else:
-        print(f"Let's try again, {name}!")
-        return False
+    return str(answer), str(right_answer)
 
 def max_divider(n):
     all_dividers = []

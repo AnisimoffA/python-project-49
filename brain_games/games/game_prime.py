@@ -14,11 +14,7 @@ def prime_game():
     else:
         right_answer = "no"
 
-    if answer == right_answer:
-        print("correct!")
-    else:
-        print(f"Let's try again, {name}!")
-        return False
+    return str(answer), str(right_answer)
 
 def is_prime(num):
     count = 0
