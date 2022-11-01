@@ -1,5 +1,4 @@
 from random import randint, choice
-import prompt
 
 
 def calc_game():

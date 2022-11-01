@@ -1,5 +1,4 @@
 from random import randint
-import prompt
 
 
 def progression_game():
@@ -12,13 +11,9 @@ def progression_game():
         our_range.append(str(int(our_range[-1]) + one_step))
 
     hide_number = randint(0, len(our_range) - 1)
-    n = -1
 
-    for _ in range(1, len(our_range) + 1):
-        n += 1
-        if n == hide_number:
-            right_answer = our_range[hide_number]
-            our_range[hide_number] = ".."
+    right_answer = our_range[hide_number]
+    our_range[hide_number] = ".."
 
     list_string = (" ".join(our_range))
 

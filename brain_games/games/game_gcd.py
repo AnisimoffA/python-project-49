@@ -1,5 +1,4 @@
 from random import randint
-import prompt
 
 
 def gcd_game():
@@ -19,7 +18,7 @@ def gcd_game():
 
 def getAllDivisors(n):
     all_dividers = []
-    
+
     for x in range(1, int(n/2 + 1)):
         if n % x == 0:
             all_dividers.append(x)
