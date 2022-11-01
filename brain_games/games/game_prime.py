@@ -7,7 +7,7 @@ def prime_game():
     print("Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
     print(f"Question: {number}")
 
-    if is_prime(number) == 0:
+    if is_prime(number):
         right_answer = "yes"
     else:
         right_answer = "no"
@@ -20,4 +20,7 @@ def is_prime(num):
     for x in range(2, num):
         if num % x == 0:
             count += 1
-    return count
+    if count == 0:
+        return True
+    else:
+        return False
