@@ -24,6 +24,5 @@ def progression_game():
 
     print("What number is missing in the progression?")
     print(f"Question: {list_string}")
-    answer = prompt.string("Your answer: ")
 
-    return str(answer), str(right_answer)
+    return str(right_answer)

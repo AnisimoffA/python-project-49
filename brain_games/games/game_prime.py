@@ -6,14 +6,13 @@ def prime_game():
     number = randint(1, 100)
     print("Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
     print(f"Question: {number}")
-    answer = prompt.string("Your answer: ")
 
     if is_prime(number) == 0:
         right_answer = "yes"
     else:
         right_answer = "no"
 
-    return str(answer), str(right_answer)
+    return right_answer
 
 
 def is_prime(num):

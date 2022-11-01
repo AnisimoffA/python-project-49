@@ -8,7 +8,6 @@ def calc_game():
     action = choice(["+", "-", "*"])
     print("What is the result of the expression?")
     print(f"Question: {number1} {action} {number2}")
-    answer = prompt.string("Your answer: ")
 
     if action == "+":
         right_answer = number1 + number2
@@ -17,4 +16,4 @@ def calc_game():
     elif action == "*":
         right_answer = number1 * number2
 
-    return str(answer), str(right_answer)
+    return str(right_answer)

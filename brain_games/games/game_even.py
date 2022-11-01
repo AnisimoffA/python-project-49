@@ -5,19 +5,15 @@ import prompt
 def even_game():
     number = randint(1, 6)
     print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
-    answer = prompt.string(f"Question: {number}\n")
-    print("Your answer: ", answer)
+    print(f"Question: {number}")
 
     if is_even(number):
         right_answer = "yes"
     else:
         right_answer = "no"
 
-    return str(answer), str(right_answer)
+    return right_answer
 
 
 def is_even(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+    return True if num % 2 == 0 else False

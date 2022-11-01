@@ -1,4 +1,5 @@
 from brain_games.scripts.brain_games import name
+import prompt
 
 
 player_name = name
@@ -6,8 +7,10 @@ player_name = name
 def lets_play(func):
     step = 0
     while step <= 2:
-        greeting = func()
-        if greeting[0] == greeting[1]:
+        right_answer = func()
+        answer = prompt.string("Your answer: ")
+
+        if right_answer == answer:
             print("correct!")
             step += 1
         else:
