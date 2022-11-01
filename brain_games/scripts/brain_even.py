@@ -4,7 +4,7 @@ from brain_games.games import game_even
 
 
 def main():
-    game_logic.logic(game_even.even_game)
+    game_logic.lets_play(game_even.even_game)
 
 
 if __name__ == "__main__":

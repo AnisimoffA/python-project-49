@@ -12,6 +12,8 @@ def main2():
     x = cli.welcome_user()
     return x
 
+name = main2()
+
 
 if __name__ == "__main__":
     main()
