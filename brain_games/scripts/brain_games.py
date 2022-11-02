@@ -7,12 +7,10 @@ def main():
     cli.welcome_user()
 
 
-def main2():
+def name():
     print("Welcome to the Brain Games!")
     x = cli.welcome_user()
     return x
-
-name = main2()
 
 
 if __name__ == "__main__":
