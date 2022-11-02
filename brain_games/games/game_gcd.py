@@ -19,7 +19,7 @@ def gcd_game():
 def getAllDivisors(n):
     all_dividers = []
 
-    for x in range(1, int(n / 2 + 1)+1):
+    for x in range(1, int(n / 2 + 1) + 1):
         if n % x == 0:
             all_dividers.append(x)
     return all_dividers
