@@ -1,13 +1,16 @@
-from brain_games.scripts.brain_games import name
+from brain_games.cli import welcome_user
 import prompt
 
 
-player_name = name()
+NUMBER_OF_ROUNDS = 3
 
 
-def lets_play(func):
+def run_game(func):
+    print("Welcome to the Brain Games!")
+    player_name = welcome_user()
     step = 0
-    while step <= 2:
+
+    while step < NUMBER_OF_ROUNDS:
         right_answer = func()
         answer = prompt.string("Your answer: ")
 

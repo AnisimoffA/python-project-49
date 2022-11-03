@@ -4,11 +4,6 @@ import brain_games.cli as cli
 
 def main():
     print("Welcome to the Brain Games!")
-    cli.welcome_user()
-
-
-def name():
-    print("Welcome to the Brain Games!")
     x = cli.welcome_user()
     return x
 
