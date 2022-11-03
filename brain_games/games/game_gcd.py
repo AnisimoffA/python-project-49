@@ -22,7 +22,7 @@ Question: {number1} {number2}"""
 def get_all_divisors(n):
     all_dividers = []
 
-    for x in range(1, int(n / 2 + 1) + 1):
+    for x in range(1, int(n / 2 + 1) + 2):
         if n % x == 0:
             all_dividers.append(x)
     return all_dividers
