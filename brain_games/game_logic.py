@@ -2,16 +2,16 @@ from brain_games.cli import welcome_user
 import prompt
 
 
-NUMBER_OF_ROUNDS = 3
-
-
 def run_game(game):
+    number_of_rounds = 3
     print("Welcome to the Brain Games!")
     player_name = welcome_user()
     step = 0
 
-    while step < NUMBER_OF_ROUNDS:
-        right_answer = game()
+    while step < number_of_rounds:
+        game_condition, right_answer = game()
+        print(game_condition)
+
         answer = prompt.string("Your answer: ")
 
         if right_answer == answer:

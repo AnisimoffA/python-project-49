@@ -6,11 +6,10 @@ def calc_game():
     number2 = randint(1, 30)
     action = choice(["+", "-", "*"])
 
-    print("What is the result of the expression?")
-    print(f"Question: {number1} {action} {number2}")
+    CONDITION = f"""What is the result of the expression?"\nQuestion: {number1} {action} {number2}"""
 
     right_answer = calculate(number1, number2, action)
-    return str(right_answer)
+    return CONDITION, str(right_answer)
 
 
 def calculate(num1, num2, action):
