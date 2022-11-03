@@ -5,13 +5,13 @@ import prompt
 NUMBER_OF_ROUNDS = 3
 
 
-def run_game(func):
+def run_game(game):
     print("Welcome to the Brain Games!")
     player_name = welcome_user()
     step = 0
 
     while step < NUMBER_OF_ROUNDS:
-        right_answer = func()
+        right_answer = game()
         answer = prompt.string("Your answer: ")
 
         if right_answer == answer:

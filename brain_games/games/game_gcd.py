@@ -8,15 +8,18 @@ def gcd_game():
     print(f"Question: {number1} {number2}")
     answer_list = []
 
-    for x in getAllDivisors(number1):
-        if x in getAllDivisors(number2):
+    number1_all_divisors = get_all_divisors(number1)
+    number2_all_divisors = get_all_divisors(number2)
+
+    for x in number1_all_divisors:
+        if x in number2_all_divisors:
             answer_list.append(x)
 
     right_answer = max(answer_list)
     return str(right_answer)
 
 
-def getAllDivisors(n):
+def get_all_divisors(n):
     all_dividers = []
 
     for x in range(1, int(n / 2 + 1) + 1):

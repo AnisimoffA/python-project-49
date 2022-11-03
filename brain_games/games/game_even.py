@@ -15,4 +15,4 @@ def even_game():
 
 
 def is_even(num):
-    return True if num % 2 == 0 else False
+    return num % 2 == 0
