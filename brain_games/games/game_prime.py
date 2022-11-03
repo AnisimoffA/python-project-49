@@ -16,6 +16,10 @@ Question: {number}'
 
 def is_prime(num):
     count = 0
+
+    if num == 1:
+        return False
+
     for x in range(2, num):
         if num % x == 0:
             count += 1
