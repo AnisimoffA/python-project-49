@@ -7,7 +7,7 @@ def progression_game():
     first_number = randint(1, 50)
     our_range = [str(first_number)]
 
-    for _ in range(1, len_of_range + 1):
+    for _ in range(len_of_range):
         our_range.append(str(int(our_range[-1]) + one_step))
 
     hide_number = randint(0, len(our_range) - 1)
@@ -17,7 +17,7 @@ def progression_game():
 
     list_string = (" ".join(our_range))
 
-    TASK = f"What number is missing in the progression?"
+    TASK = "What number is missing in the progression?"
     input_line = f"Question: {list_string}"
 
     return TASK, input_line, str(right_answer)

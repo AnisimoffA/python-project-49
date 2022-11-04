@@ -3,7 +3,7 @@ from random import randint
 
 def prime_game():
     number = randint(1, 100)
-    TASK = f'Answer "yes" if given number is prime. Otherwise answer "no".'
+    TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     input_line = f"Question: {number}"
 
     if is_prime(number):

@@ -4,7 +4,7 @@ from random import randint
 def even_game():
     number = randint(1, 6)
 
-    TASK = f"Answer \"yes\" if the number is even, otherwise answer \"no\"."
+    TASK = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
     input_line = f"Question: {number}"
 
     if is_even(number):
