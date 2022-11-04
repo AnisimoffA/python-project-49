@@ -4,8 +4,8 @@ from random import randint
 def gcd_game():
     number1 = randint(1, 50)
     number2 = randint(1, 50)
-    TASK = f"Find the greatest common divisor of given numbers.\n\
-Question: {number1} {number2}"""
+    TASK = f"Find the greatest common divisor of given numbers."
+    input_line = f"Question: {number1} {number2}"
     answer_list = []
 
     number1_all_divisors = get_all_divisors(number1)
@@ -16,7 +16,7 @@ Question: {number1} {number2}"""
             answer_list.append(x)
 
     right_answer = max(answer_list)
-    return TASK, str(right_answer)
+    return TASK, input_line, str(right_answer)
 
 
 def get_all_divisors(n):

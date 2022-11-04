@@ -17,7 +17,7 @@ def progression_game():
 
     list_string = (" ".join(our_range))
 
-    TASK = f"What number is missing in the progression?\n\
-Question: {list_string}"
+    TASK = f"What number is missing in the progression?"
+    input_line = f"Question: {list_string}"
 
-    return TASK, str(right_answer)
+    return TASK, input_line, str(right_answer)
