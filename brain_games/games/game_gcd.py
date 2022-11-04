@@ -8,8 +8,8 @@ def gcd_game():
     input_line = f"Question: {number1} {number2}"
     answer_list = []
 
-    number1_all_divisors = get_all_divisors(number1)
-    number2_all_divisors = get_all_divisors(number2)
+    number1_all_divisors = divisors(number1)
+    number2_all_divisors = divisors(number2)
 
     for x in number1_all_divisors:
         if x in number2_all_divisors:
@@ -19,7 +19,7 @@ def gcd_game():
     return TASK, input_line, str(right_answer)
 
 
-def get_all_divisors(n):
+def divisors(n):
     all_dividers = []
 
     for x in range(1, int(n / 2 + 1) + 2):
