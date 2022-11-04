@@ -25,4 +25,5 @@ def divisors(n):
     for x in range(1, int(n / 2 + 1) + 2):
         if n % x == 0:
             all_dividers.append(x)
+    all_dividers.append(n)
     return all_dividers
