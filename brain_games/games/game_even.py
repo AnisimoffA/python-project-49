@@ -1,10 +1,11 @@
 from random import randint
 
 
-def even_game():
-    number = randint(1, 6)
+TASK = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
 
-    TASK = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
+
+def game():
+    number = randint(1, 6)
     input_line = f"Question: {number}"
 
     if is_even(number):
@@ -12,7 +13,7 @@ def even_game():
     else:
         right_answer = "no"
 
-    return TASK, input_line, right_answer
+    return input_line, right_answer
 
 
 def is_even(num):

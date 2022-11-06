@@ -1,7 +1,10 @@
 from random import randint
 
 
-def progression_game():
+TASK = "What number is missing in the progression?"
+
+
+def game():
     one_step = randint(1, 10)
     len_of_range = randint(5, 10)
     first_number = randint(1, 50)
@@ -16,8 +19,6 @@ def progression_game():
     our_range[hide_number] = ".."
 
     list_string = (" ".join(our_range))
-
-    TASK = "What number is missing in the progression?"
     input_line = f"Question: {list_string}"
 
-    return TASK, input_line, str(right_answer)
+    return input_line, str(right_answer)
