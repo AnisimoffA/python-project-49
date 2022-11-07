@@ -4,7 +4,7 @@ from random import randint, choice
 TASK = "What is the result of the expression?"
 
 
-def game():
+def start_game():
     number1 = randint(1, 30)
     number2 = randint(1, 30)
     action = choice(["+", "-", "*"])

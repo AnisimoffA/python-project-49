@@ -4,7 +4,7 @@ from random import randint
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def game():
+def start_game():
     number = randint(1, 100)
     input_line = f"Question: {number}"
 

@@ -4,7 +4,7 @@ from random import randint
 TASK = "What number is missing in the progression?"
 
 
-def game():
+def start_game():
     one_step = randint(1, 10)
     len_of_range = randint(5, 10)
     first_number = randint(1, 50)

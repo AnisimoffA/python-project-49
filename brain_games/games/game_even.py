@@ -4,7 +4,7 @@ from random import randint
 TASK = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
 
 
-def game():
+def start_game():
     number = randint(1, 6)
     input_line = f"Question: {number}"
 
